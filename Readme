@@ -1,0 +1,54 @@
+## Prerequisites
+
+Before running the application, ensure you have the following installed:
+- **Java 11 or higher**: Required to run the Spring Boot application.
+- **Maven**: For building the project and managing dependencies.
+- **MongoDB**: For storing member details.
+
+
+## Steps to Build and Run the Application
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-repo/kitchensink-api.git
+cd kitchensink-api
+
+### 2. Configure MongoDB
+
+Ensure MongoDB is running locally on your machine. Open MongoDB Compass, Use the connection string
+mongodb://localhost:27017 to connect to your local MongoDB instance.The application expects
+MongoDB to be available on localhost with port 27017 and will connect to a database named
+Membership_details and a collection called Member.You can modify these configurations in
+the application.properties file if needed.
+
+
+### 3. Build the Application
+
+Use Maven to build the application:
+
+mvn clean install
+
+### 4. Run the Application
+
+mvn spring-boot:run
+
+
+5. Access the API
+
+Once the application is running, the API will be available at http://localhost:8081/api/members.
+You can interact with the following endpoints using the postman tool:
+
+POST /api/members: Register a new member.
+
+Request Body:
+
+{
+  "name": "gowtham majeti",
+  "email": "srinivasgowthammajeti7@gmail.com",
+  "phoneNumber": "1234567890"
+}
+
+GET /api/members: Retrieve all registered members.
+
+
