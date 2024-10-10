@@ -4,6 +4,9 @@ Before running the application, ensure you have the following installed:
 - **Java 11 or higher**: Required to run the Spring Boot application.
 - **Maven**: For building the project and managing dependencies.
 - **MongoDB**: For storing member details.
+- **Lombok Plugin**: Lombok is used for reducing boilerplate code such as getters, setters, and
+constructors in Java. Make sure you add the Lombok dependency to the pom.xml file and install
+the Lombok plugin in your IDE (e.g., IntelliJ or Eclipse).
 
 
 ## Steps to Build and Run the Application
@@ -11,7 +14,7 @@ Before running the application, ensure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-repo/kitchensink-api.git
+git clone https://github.com/srinivasgowthamajeti7/Kitchensink-BE.git
 cd kitchensink-api
 
 ### 2. Configure MongoDB
